@@ -368,6 +368,12 @@ people.forEach((person) => {
   person.age = age;
   person.century = century;
 
+  if (person.sex === 'm') {
+    person.sex = 'Male';
+  } else {
+    person.sex = 'Female';
+  }
+
   table.append(row);
 
   for (let i = 0; i < 6; i++) {
