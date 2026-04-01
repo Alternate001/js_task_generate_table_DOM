@@ -361,7 +361,7 @@ const table = document.querySelector('.dashboard');
 
 people.forEach((person) => {
   const age = person.died - person.born;
-  const century = Math.floor(person.died / 100);
+  const century = Math.ceil(person.died / 100);
   const keys = ['name', 'sex', 'born', 'died', 'age', 'century'];
   const row = document.createElement('tr');
 
