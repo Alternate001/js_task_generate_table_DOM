@@ -362,9 +362,6 @@ people.forEach((person) => {
   const keys = ['name', 'sex', 'born', 'died', 'age', 'century'];
   const row = document.createElement('tr');
 
-  person.age = age;
-  person.century = century;
-
   for (let i = 0; i < keys.length; i++) {
     let value;
     const key = keys[i];
